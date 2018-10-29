@@ -14,7 +14,7 @@ namespace Azure.Functions.v2.DI.Services
 
         public TimeZoneService(IAzureBlobStorageHelper azureBlobStorageHelper)
         {
-            _azureBlobStorageHelper = azureBlobStorageHelper;
+            _azureBlobStorageHelper = azureBlobStorageHelper;;
         }
 
         public async Task<IEnumerable<string>> GetTimeZones()
